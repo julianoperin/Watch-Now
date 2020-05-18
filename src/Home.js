@@ -22,7 +22,7 @@ class Home extends Component {
     const movieGrid = this.state.movieList.map((movie, index) => {
       return (
         <div className="col s3" key={index}>
-          <Link to=""></Link>
+          <Link to={`/movie/${movie.id}`}></Link>
           <img src={`${imageUrl}${movie.poster_path}`} />
         </div>
       );
